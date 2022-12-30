@@ -1,0 +1,92 @@
+.ms_container {
+    max-width: 960px;
+    margin-inline: auto;
+}
+
+.logo {
+    max-width: 80px;
+    padding: 1rem;
+
+}
+
+.col.ms_cell {
+    aspect-ratio: 1/1;
+    border-color: black;
+
+
+}
+
+.top_left {
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    margin-right: -2px;
+    margin-bottom: -2px;
+}
+
+.top_right {
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    margin-left: -2px;
+    margin-bottom: -2px;
+}
+
+.center {
+    border: 2px solid;
+}
+
+.bottom_left {
+    border-top: 2px solid;
+    border-right: 2px solid;
+    margin-right: -2px;
+    margin-top: -2px;
+}
+
+.bottom_right {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+[class*='_left'] {
+    border-left: 0;
+}
+
+[class*='_right'] {
+    border-right: 0;
+}
+
+[class*='_top'] {
+    border-top: 0;
+}
+
+[class*='_bottom'] {
+    border-bottom: 0;
+}
+
+
+.col.ms_cell:hover {
+    cursor: pointer;
+}
+
+.col.ms_cell i {
+    font-size: 8rem;
+}
+
+.ms_layover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ms_layover>div {
+    width: fit-content;
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 3rem;
+}
